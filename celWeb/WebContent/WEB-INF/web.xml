@@ -68,4 +68,24 @@
         <servlet-name>ClienteFormXls</servlet-name>
         <url-pattern>/ClienteFormXls</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <description>Servlet Cliente Form Pdf</description>
+        <display-name>ClienteFormPdf</display-name>
+        <servlet-name>ClienteFormPdf</servlet-name>
+        <servlet-class>mx.uam.azc.comunidad00.celulares.controller.ClienteFormPdfServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ClienteFormPdf</servlet-name>
+        <url-pattern>/ClienteFormPdf</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <description>Servlet Cliente Form Html</description>
+        <display-name>ClienteFormHtml</display-name>
+        <servlet-name>ClienteFormHtml</servlet-name>
+        <servlet-class>mx.uam.azc.comunidad00.celulares.controller.ClienteFormHtmlServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ClienteFormHtml</servlet-name>
+        <url-pattern>/ClienteFormHtml</url-pattern>
+    </servlet-mapping>
 </web-app>

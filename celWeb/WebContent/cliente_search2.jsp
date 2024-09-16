@@ -69,6 +69,9 @@
                     <div class="label">PDF</div>
                 </td>
                 <td align="center">
+                    <div class="label">HTML</div>
+                </td>
+                <td align="center">
                     <div class="label">XLS</div> <sql:query
                         var="resultados" dataSource="jdbc/TestDS">
                 SELECT * FROM cliente WHERE apellido_paterno_cliente LIKE ? 
@@ -85,15 +88,22 @@
                                 onclick="window.location='ClienteForm?llave=${fila.id_cliente}'">
                             </td>
                             <td align="center"><input type="button"
-                                value="Ver como PDF"></td>
+                                value="PDF"
+                                onclick="window.location='ClienteFormPdf?llave=$
+{fila.id_cliente}'"></td>
+                            <td align="center"><input type="button"
+                                value="HTML"
+                                onclick="window.location='ClienteFormHtml?llave=$
+{fila.id_cliente}'">
+                            </td>
                             <%-- Practica xls --%>
                             <td align="center"><input type="button"
-                                value="Ver como XLS"
+                                value="XLS"
                                 onclick="window.location='ClienteFormXls?llave=${fila.id_cliente}'"></td>
                         </tr>
                     </c:forEach>
         </table>
-        <br> <input type="button" value="  Regresar  "
+        <br> <input type="button" value="Regresar"
             onclick="window.location='${ pageContext.request.contextPath }/main.jsp'">
     </form>
     <br>

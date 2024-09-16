@@ -93,8 +93,8 @@ Intel(R) Core(TM) i7-4500U CPU @ 1.80GHz 2.40 GHz) [Composer]">
                 </tr>
             </c:forEach>
         </table>
-        <br> <input type="button" value=" Regresar "
-            onclick="window.location='${ pageContext.request.contextPath }/cliente_search.jsp'">
+        <br> <input type="button" value="Regresar"
+            onclick="window.location='${ pageContext.request.contextPath }/cliente_search2.jsp'">
     </form>
     <br>
 </body>
