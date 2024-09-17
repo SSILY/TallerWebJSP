@@ -4,18 +4,22 @@ import mx.uam.azc.comunidad00.celulares.data.ClienteDTO;
 
 import com.lowagie.text.*;
 import com.lowagie.text.pdf.PdfWriter;
+
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
+
 import javax.naming.*;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
 import javax.sql.DataSource;
+
 import java.awt.Color;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.sql.*;
 import java.util.ArrayList;
+
 import net.sf.jxls.exception.ParsePropertyException;
 
 /**

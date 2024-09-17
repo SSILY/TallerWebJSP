@@ -89,12 +89,10 @@
                             </td>
                             <td align="center"><input type="button"
                                 value="PDF"
-                                onclick="window.location='ClienteFormPdf?llave=$
-{fila.id_cliente}'"></td>
+                                onclick="window.location='ClienteFormPdf?llave=${fila.id_cliente}'"></td>
                             <td align="center"><input type="button"
                                 value="HTML"
-                                onclick="window.location='ClienteFormHtml?llave=$
-{fila.id_cliente}'">
+                                onclick="window.location='ClienteFormHtml?llave=${fila.id_cliente}'">
                             </td>
                             <%-- Practica xls --%>
                             <td align="center"><input type="button"
